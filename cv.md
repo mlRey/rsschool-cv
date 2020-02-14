@@ -1,7 +1,7 @@
 # Junior Developer Resume
 
 ## Name
-    Yauheni Katliarou
+    - Yauheni Katliarou
 
 ## Contact
     - Email:        ml_rey@mail.ru
@@ -18,9 +18,9 @@
     - CSS
     - C#
 
-## Code examples 
+## Code examples
     - print("Hello, World!")
-    
+
 ## Experience
 [linkedin](https://www.linkedin.com/in/евгений-котляров-597663165/)
 

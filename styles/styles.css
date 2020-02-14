@@ -1,0 +1,43 @@
+body {
+       width: 1024px;
+       margin-left: auto;
+       margin-right: auto; 
+       text-align: center;
+      
+}
+
+hr {
+       border: none; 
+       background-color: lightgray ; /* Цвет линии */
+       height: 1px; /* Толщина линии */
+}
+
+h2 {
+       text-align: left;
+}
+
+ul {
+       background-color: rgb(246,248,250);
+       border-radius: 5px;
+}
+
+li {
+       text-align: left;
+       list-style-type: none;
+}
+li:before {
+       content: "- "; 
+}
+/* Блок для вывода картинки повверх текста*/
+.fonn IMG {
+       position: absolute;
+       width: 200px;
+       left: 824px;     
+}
+
+ .ppp {
+       position: relative;       
+ }
+
+
+
