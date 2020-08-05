@@ -1,9 +1,13 @@
+html {
+       font-size: 10px;
+     }
+
 body {
        width: 1024px;
        margin-left: auto;
        margin-right: auto; 
        text-align: center;
-      
+       font-size: 1.4rem;      
 }
 
 hr {
@@ -19,10 +23,10 @@ h2 {
 ul {
        background-color: rgb(246,248,250);
        border-radius: 5px;
+       text-align: left;
 }
 
 li {
-       text-align: left;
        list-style-type: none;
 }
 li:before {
@@ -32,12 +36,23 @@ li:before {
 .fonn IMG {
        position: absolute;
        width: 200px;
-       left: 824px;     
+       left: 824px;
+       border-radius: 50%;     
 }
 
  .ppp {
+       /* visibility: hidden; */
        position: relative;       
  }
 
+.code_examp{
+       font-size: 1.8rem;
+       text-decoration: underline;
+       border-radius: 2px;
+       background-color:#cccccc;
+}
 
+.Experience{
+       font-size: 1.6rem;
+}
 
