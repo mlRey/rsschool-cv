@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Junior Developer Resume</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Junior Developer Resume</h1>
+    <div class="ppp">
+      <div class="fonn">
+        <img src="images/foto.jpg" alt="Очень скрытный текст">
+      </div>
+    </div>
+    <hr>
+    <h2>Name</h2>
+    <hr>
+    <ul>
+      <li>Евгений Котляров</li>
+    </ul>
+    <h2>Contact</h2>
+    <hr>
+    <ul>
+      <li>Email: ml_rey@mail.ru</li>
+      <li>Phone number: +375(29)3732707</li>
+      <li>Telegram: @ml_Rey</li>
+    </ul>
+    <h2>Goal</h2>
+    <hr>
+    <ul>
+      <li>Стабильная работа, которая приносит удовольствие и достойный доход, новые знания и опыт.</li>
+    </ul>
+    <h2>Skills</h2>
+    <hr>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+    <h2>Code examples</h2>
+    <hr>
+    <ul>
+      <p class="code_examp"> Функция для подсчета слов </p>
+      <pre><code>function countWords(str) {
+            return (str.trim() == &quot;&quot;) ? 0 : str.replace(/\s+/g, ' ').trim().split(&quot; &quot;).length;
+          }</code></pre>
+
+      <p class="code_examp"> Функция, которая вычисляет результат для любых математических выражений</p>
+      <pre><code>function expressionCalculator(expr) {
+    expr = expr.replace(/\s/g, '').replace(/(\*|\/|\+|\-)/g, ' $&amp; ');
+    let ob = expr.split('(').length - 1;
+    let cb = expr.split(')').length - 1;
+    let brexp;
+    if (ob != cb) throw new Error(&quot;ExpressionError: Brackets must be paired.&quot;);
+    while (ob &gt; 0) {
+        if ((brexp = expr.match(/(\([0-9\+\/\*\-. ]+\))/g)) !== null) {
+            for (let i = 0; i &lt; brexp.length; i++) {
+                let str = brexp[i].replace('(', '').replace(')', '');
+                expr = expr.replace(brexp[i], solve(str));
+            }
+        }
+        ob -= 1;
+    }
+    return (solve(expr));
+}
+function solve(expr) {
+    let tmp = expr.split(' ');
+    for (let i = 0; i &lt; tmp.length; i++) {
+        if (tmp[i] === '*') {
+            tmp[i] = Number(tmp[i - 1]) * Number(tmp[i + 1]);
+            tmp.splice(i - 1, 1);
+            tmp.splice(i, 1);
+            i -= 1;
+        }
+        if (tmp[i] === &quot;/&quot;) {
+            if (tmp[i + 1] === '0') throw new TypeError('TypeError: Division by zero.');
+            tmp[i] = Number(tmp[i - 1]) / Number(tmp[i + 1]);
+            tmp.splice(i - 1, 1);
+            tmp.splice(i, 1);
+            i -= 1;
+        }
+    }
+    for (let i = 0; i &lt; tmp.length; i++) {
+        if (tmp[i] === '+') {
+            tmp[i] = Number(tmp[i - 1]) + Number(tmp[i + 1]);
+            tmp.splice(i - 1, 1);
+            tmp.splice(i, 1);
+            i -= 1;
+        }
+        if (tmp[i] === &quot;-&quot;) {
+            tmp[i] = Number(tmp[i - 1]) - Number(tmp[i + 1]);
+            tmp.splice(i - 1, 1);
+            tmp.splice(i, 1);
+            i -= 1;
+        }
+    }
+    return Number(tmp[0]);
+}
+</code></pre>
+
+<p class="code_examp"> Архивная версия сайта, в разработке которого принимал участие</p> 
+<a href="http://web.archive.org/web/20191216203240/http://gomeloblmrek.by/index.php?lang=ru" target="_blank">ссылка на web.archive.org</a>
+
+<p class="code_examp"> Приложения, сделанные в рамках курса Rolling Scopes School - JS / FRONT-END:</p>
+<a href="https://mlrey.github.io/singolo/#" target="_blank">Сайт по макету с figma</a> <br/>
+<a href="https://mlrey.github.io/virtual-keyboard/" target="_blank"> Виртуальная клавиатура</a>
+    </ul>
+    <h2>Experience</h2>
+    <hr>
+    <ul class="Experience">
+      <li>5 лет опыта работы по специальности Инженер-программист / Администратор сетей в учреждении ГоМРЭК</li>
+      <li>1 год работы в должности Ассессор-тестировщик Яндекса </li> 
+      <li>участник курсов Rolling Scopes School, курс JS / FRONT-END 2020г</li>
+
+      <li><a href="https://www.codewars.com/users/mlrey23" target="_blank">Codewars</a></li> 
+      <li><a href="https://github.com/mlRey" target="_blank">Gitnub</a></li> 
+    </ul>
+    <h2>Education</h2>
+    <hr>
+    <ul>
+      <li>ГГТУ имени П.О. Сухого 2010-2015, инженер-программист </li>
+    </ul>
+    <h2>English</h2>
+    <hr>
+    <ul>
+      <li>A2</li>
+    </ul>
+
+
+  </div>
+
+</body>
+
+</html>
